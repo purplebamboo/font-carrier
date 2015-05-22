@@ -1,0 +1,5 @@
+benchmark
+coverage
+node_modules
+test
+*.log

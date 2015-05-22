@@ -1,0 +1,74 @@
+v2.3.0                                              Dec 02, 2014
+----------------------------------------------------------------
+* Fix instanceof (#20)
+* Retire $class (#17)
+
+v2.2.0                                              Oct 11, 2013
+----------------------------------------------------------------
+* Introduce $class (issue #14, thanks to Anton Baukin)
+* API change (remove isMap, isArray, isFunction, isString,
+  isClass; add mapOrNil, arrayOrNil, functionOrNil, stringOrNil
+  classOrNil)
+* Update jsface.ready
+* Update unit test
+
+v2.1.1                                              Apr 25, 2012
+----------------------------------------------------------------
+* Introduce main()
+* Fix bug in 2.1.0 causing all static properties got written to
+  class prototype
+* Minor toString alias optimization
+
+v2.1.0                                              Mar 15, 2012
+----------------------------------------------------------------
+* Remove $super(): Speed is more important
+* Use "use strict"
+* Optimize speed, size and add benchmarks
+
+v2.0.3                                              Mar 14, 2012
+----------------------------------------------------------------
+* Introduce Child.$super, Child.$superp
+* Deprecate $super(): hate to see it's slow vs. other frameworks
+* Update unit tests (use Child.$super, Child.$superp)
+
+v2.0.2                                              Mar 09, 2012
+----------------------------------------------------------------
+* Separate $ready as a standalone plugin
+* Fix undefined bug checking class prototype in jsface.isClass
+* Minimized+gzip size reduced to under 1K
+* Add pointcut plugin
+* Change code to "2-space convention"
+
+v2.0.1                                              Jan 16, 2012
+----------------------------------------------------------------
+* Fix unit tests on IE (extra commas, iframe injection)
+* Fix jsface.isArray works incorrectly over String (IE6, IE5.5)
+* Fix extend(instance, Class)
+
+v2.0.0                                              Dec 10, 2011
+----------------------------------------------------------------
+* Get rid of $meta (cleaner class structure)
+* Introduce $super, extend (mixin, trait)
+* Overloading support as a standalone plugin (TBD)
+* AOP support as a standalone plugin (TBD)
+* Anonymous class (without name) (i.e: var Animal = Class({});)
+* constructor instead of java style ClassName
+* noConflict() mode
+* support private method (class body is a function)
+* Single constructor inheritance, multiple trails (Scala style)
+* Sugar syntax Class(), pointcuts()
+* CommonJS support
+* Make jsFace private methods not exposed via jsFace namespace
+* Remove unnecessary code
+* Size optimization
+* More unit tests
+
+v1.2                                                June 30 2011
+----------------------------------------------------------------
+* More elegant syntax.
+* Remove unnecessary meta data copying on class inheritance.
+
+v1.2b                                           November 26 2010
+----------------------------------------------------------------
+* Initial release. A complete new look from version 1.2a which
+  was developed for browsers.

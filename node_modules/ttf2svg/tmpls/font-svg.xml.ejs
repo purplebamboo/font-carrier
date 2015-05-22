@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <font id="<%= meta['Postscript name'] %>">
+            <font-face font-family="<%= meta['Font family'] %>"
+                       units-per-em="<%= meta.head.unitsPerEm %>"
+                       ascent="<%= meta.hhea.ascender %>"
+                       descent="<%= meta.hhea.descender %>"
+                       bbox="<%= meta.head.xMin %> <%= meta.head.yMin %> <%= meta.head.xMax %> <%= meta.head.yMax %>"
+                    />
+            <missing-glyph horiz-adv-x="0" />
+            <% for (var idx = 0; idx < glyphs.length; idx++) { %>
+            <glyph glyph-name="<%= glyphs[idx].name %>" unicode="<%= glyphs[idx].unicode %>" horiz-adv-x="<%= glyphs[idx].boundingBox.upX %>" d="<%= glyphs[idx].path %>"/> <% } %>
+        </font>
+    </defs>
+</svg>

@@ -2,7 +2,7 @@
   "name": "font-carrier",
   "version": "0.0.1",
   "description": "字体搬运工，中文字体解决方案，iconfont",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "keywords": [
     "font",
     "webfont",
@@ -10,8 +10,10 @@
   ],
   "author": "purplebamboo <xhzhuweikang@163.com>",
   "dependencies": {
+    "jdataview": "^2.5.0",
     "lodash": "^3.7.0",
     "multiline": "^1.0.2",
+    "opentype.js": "~0.4.7",
     "svg2ttf": "^2.0.0",
     "svg_pathify": "0.0.x",
     "svgpath": "^2.0.0",
@@ -26,9 +28,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": ""
+    "test": "node ./test/index.js"
   },
   "engines": {
-    "node": ">= 0.11.12"
+    "node": ">= 0.11.x"
   }
 }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+</head>
+<body>
+
+<div>
+<style type="text/css">
+  @font-face {
+    font-family: 'font1';
+    src:src: url('./font1.eot'); /* IE9*/
+    src: url('./font1.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('./font1.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('./font1.svg#iconfont'); /* iOS 4.1- */
+  }
+  .font-1{
+    font-family:"font1";font-size:16px;font-style:normal;
+  }
+</style>
+  <h1>测试-使用svg解析生成字体</h1>
+  <div class="font-1">爱&#xe600;&#xe601;其他文字正常显示</div>
+</div>
+
+<div>
+<style type="text/css">
+  @font-face {
+    font-family: 'font2';
+    src:url('./font2.eot'); /* IE9*/
+    src: url('./font2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('./font2.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('./font2.svg#iconfont'); /* iOS 4.1- */
+  }
+  .font-2{
+    font-family:"font2";font-size:16px;font-style:normal;
+  }
+</style>
+  <h1>测试-使用其他字体导入到当前字体</h1>
+  <div class="font-2">爱&#xe600;&#xe601;我是方正哈其他文字</div>
+</div>
+
+<div>
+<style type="text/css">
+  @font-face {
+    font-family: 'font3';
+    src:url('./font3.eot'); /* IE9*/
+    src: url('./font3.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('./font3.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('./font3.svg#iconfont'); /* iOS 4.1- */
+  }
+  .font-3{
+    font-family:"font3";font-size:16px;font-style:normal;
+  }
+</style>
+  <h1>测试-使用min来精简一个字体</h1>
+  <div class="font-3">我是精简后的字体，我可以重复</div>
+</div>
+
+
+<div>
+
+  <h1>测试-从已有字体导出svg</h1>
+  <iframe src="./export.svg"></iframe>
+</div>
+
+</body>
+
+
+</html>

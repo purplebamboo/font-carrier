@@ -14,7 +14,7 @@ font-carrier封装了简单的api,让你可以将某个svg,设置成一个字对
 * 支持创建一个空白字体
 * 支持解析已有字体(ttf,svg)
 * 支持使用svg来设置字的展现
-* 支持解析svg的转换还有各种非path图形
+* 支持解析svg的各种转换还有各种非path图形
 * 支持针对某一个字，导出对应的svg
 * 支持导出四种浏览器主流字体（ttf,eot,woff,svg）
 * 支持设置各种字体相关内容
@@ -88,7 +88,7 @@ font.output({
       src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
       url('iconfont.woff') format('woff'), /* chrome、firefox */
       url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-      url('iconfont.svg#uxiconfont') format('svg'); /* iOS 4.1- */
+      url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
   }
 
   .iconfont{font-family:"iconfont";font-size:16px;font-style:normal;}
@@ -105,7 +105,7 @@ font.output({
 
 ## api
 
-详细请看[这里](./doc/api.md)
+更多文档请看[这里](./doc/api.md)
 
 
 ## test

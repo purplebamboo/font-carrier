@@ -6,7 +6,7 @@ font-carrier是一个功能强大的字体操作库，使用它你可以随心�
 
 font-carrier封装了简单的api,让你可以将某个svg,设置成一个字对应的字形。也可以通过解析已有字体，拿到某个字在这个字体下面对应的svg。让你通过svg的维度随意修改字体展现样式。
 
-我们不生产字体，我们只是字形的搬运工
+我们不生产字体，我们只是字体的搬运工
 
 
 # features
@@ -34,7 +34,7 @@ npm install font-carrier --save
 
 ## use
 
-### 1.你可以创建一个空白字体，或者解析一个已有的字体，这样都可以得到一个字体对象
+### step-1.创建一个空白字体，或者解析一个已有的字体，这样都可以得到一个字体对象
 
 ``` js
 var fontCarrier = require('font-carrier')
@@ -46,7 +46,7 @@ var font = fontCarrier.create()
 var transFont = fontCarrier.transfer('./test/test.ttf')
 ```
 
-### 2.拿到字体对象后，你就可以使用svg随意操作字体了
+### step-2.拿到字体对象后，你就可以使用svg随意操作字体了
 
 ``` js
 //可以设置某个字对应的形状,当然unicode也是支持的
@@ -68,7 +68,7 @@ glyph.toSvg()
 
 ```
 
-### 3.使用get,set各种操作完后，你可以选择导出字体
+### step-3.使用get,set各种操作完后，你可以选择导出字体
 
 ``` js
 //默认会导出svg,ttf,eot,woff四种字体，
@@ -79,7 +79,7 @@ font.output({
 
 ```
 
-### 4.导出字体后就可以在web中使用了
+### step-4.导出字体后就可以在web中使用了
 
 ``` html
 <style type="text/css">

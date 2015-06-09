@@ -100,10 +100,10 @@ font-carrier里面有三种对象font,fontface,glyph。每个对象都有自己�
 用于针对字设置对应的glyph对象
 有两种使用方式：
 
-1. font.setSvg(key,value) 用于设置单个
+1. font.setGlyph(key,value) 用于设置单个
   * key是对应的字，也可以是unicode.
   * value是对应的glyph对象，或者是一个glyph的构造参数对象
-2. font.setSvg({key,value}) 可用于设置多个
+2. font.setGlyph({key,value}) 可用于设置多个
   key,value同上，主要可以使用object的方式一次性设置多个
 
 #### `font.allGlyph()`

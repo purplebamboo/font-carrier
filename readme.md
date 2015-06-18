@@ -134,7 +134,7 @@ font.convert({
 ``` js
 var transFont = fontCarrier.transfer('./test/test.ttf')
 
-var gs = transFont2.getGlyph('我是方正')
+var gs = transFont.getGlyph('我是方正')
 //设置到上面案例一里的字体里面
 font.setGlyph(gs)
 
@@ -151,7 +151,7 @@ font.convert({
 对中文字体精简
 
 ``` js
-//使用上面的transFont
+var transFont = fontCarrier.transfer('./test/test.ttf')
 //会自动根据当前的输入的文字过滤精简字体
 transFont.min('我是精简后的字体，我可以重复')
 transFont.output({

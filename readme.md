@@ -124,7 +124,7 @@ font.setGlyph('爱',{
 //使用unicode
 font.setSvg('&#xe601;',mail)
 
-font.convert({
+font.output({
   path:'./test'
 })
 
@@ -143,7 +143,7 @@ var gs = transFont.getGlyph('我是方正')
 font.setGlyph(gs)
 
 //这样font导出的字体里面就有了'我是方正'对应的svg形状了
-font.convert({
+font.output({
   path:'./test'
 })
 

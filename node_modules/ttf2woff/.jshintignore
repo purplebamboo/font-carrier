@@ -1,4 +1,0 @@
-.git/
-node_modules/
-lib/deflate.js
-lib/deflate_slow.js

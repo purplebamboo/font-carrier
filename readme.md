@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/font-carrier.svg)](http://badge.fury.io/js/font-carrier)
 
-
+[![Build Status](https://travis-ci.org/purplebamboo/font-carrier.svg?branch=master)](https://travis-ci.org/purplebamboo/font-carrier)
 
 font-carrier是一个功能强大的字体操作库，使用它你可以随心所欲的操作字体。
 

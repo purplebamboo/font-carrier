@@ -170,7 +170,7 @@ transFont.output({
 
 ## test
 
-先确保安装依赖包 `npm install` 再运行`npm test`之后访问 ./test/index.html
+先确保安装依赖包 `npm install` 再运行`npm test`之后访问 `./test/index.html`
 
 
 # licence

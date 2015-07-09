@@ -52,6 +52,9 @@ transFont2.output({
   path:'./test/font3'
 })
 
+//直接output
+transFont2.output()
+
 
 //导出字形
 //var g = font.getGlyph('我')
@@ -59,4 +62,7 @@ transFont2.output({
 
 var path = font.getSvg('我')
 fs.writeFileSync('./test/export.svg',path)
+//测试多个
+font.getSvg('我是好人')
+
 

@@ -108,6 +108,8 @@ font.output({
 使用svg设置一些icon
 
 ```js
+
+var fontCarrier = require('font-carrier')
 //创建空白字体，使用svg生成字体
 var font = fontCarrier.create()
 var love = fs.readFileSync('./test/svgs/love.svg').toString()
@@ -134,10 +136,14 @@ font.output({
 从其他字体导出一些图标到自己的库里
 
 ``` js
-var transFont = fontCarrier.transfer('./test/test.ttf')
+
+var fontCarrier = require('font-carrier')
+var transFont = fontCarrier.transfer('./test/test.ttf')//改成存在的字体文件地址
+//生成空白字体
+var font = fontCarrier.create()
 
 var gs = transFont.getGlyph('我是方正')
-//设置到上面案例一里的字体里面
+//设置到空白字体里面
 font.setGlyph(gs)
 
 //这样font导出的字体里面就有了'我是方正'对应的svg形状了
@@ -153,6 +159,8 @@ font.output({
 对中文字体精简
 
 ``` js
+
+var fontCarrier = require('font-carrier')
 var transFont = fontCarrier.transfer('./test/test.ttf')
 //会自动根据当前的输入的文字过滤精简字体
 transFont.min('我是精简后的字体，我可以重复')

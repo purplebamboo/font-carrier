@@ -10,9 +10,8 @@ font-carrier封装了简单的api,让你可以将某个svg,设置成一个字对
 
 我们不生产字体，我们只是字体的搬运工
 
->基于font-carrier的图形客户端版本已经上线，懒人可以直接移步[panda](https://github.com/stormtea123/panda)
-
->如果需要自动解析html、js等文件中的中文，按需压缩生成web所用格式字体文件，可以试试 [font-collector](https://github.com/JailBreakC/font-collector)
+- 基于font-carrier的图形客户端版本已经上线，懒人可以直接移步[panda](https://github.com/stormtea123/panda)
+- 如果需要自动解析html、js等文件中的中文，按需压缩生成web所用格式字体文件，可以试试 [font-collector](https://github.com/JailBreakC/font-collector)
 
 
 # features

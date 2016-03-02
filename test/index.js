@@ -60,7 +60,9 @@ transFont2.output()
 //var g = font.getGlyph('我')
 //g.toSvg('./test/export.svg')
 
-var path = font.getSvg('我')
+var path = font.getSvg('我',{
+  skipViewport:true
+})
 fs.writeFileSync('./test/export.svg',path)
 //测试多个
 font.getSvg('我是好人')

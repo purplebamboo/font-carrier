@@ -47,7 +47,7 @@ font.output({
 
 
 //测试精简字体
-transFont2.min('我是精简后的字体，我可以重复,我的x被覆盖了。')
+transFont2.min('我是精 简后的字体，我可以重复,我的x被覆盖了。')
 transFont2.output({
   path:'./test/font3'
 })

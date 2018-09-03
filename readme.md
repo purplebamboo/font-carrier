@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/font-carrier.svg)](http://badge.fury.io/js/font-carrier) [![Build Status](https://travis-ci.org/purplebamboo/font-carrier.svg?branch=master)](https://travis-ci.org/purplebamboo/font-carrier)
 
-font-carrier是一个功能强大的字体操作库，使用它你可以随心所欲的操作字体。
+font-carrier是一个功能强大的字体操作库，使用它你可以随心所欲地操作字体。
 
 一个字体font,包含若干字形glyph。比如我们浏览器里渲染`我`,浏览器就会去当前设置的font里面找到 `我`对应的字形glyph，使用它的形状来渲染。不同的字体的`我`的字形形状不一，所以才有差别。
 

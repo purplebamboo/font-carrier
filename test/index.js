@@ -40,6 +40,13 @@ console.log('解析结束，实际使用中一般不会解析这么大的字体�
 var gs = transFont2.getGlyph('我是方正')
 font.setGlyph(gs)
 
+console.log('开始解析苹方字体。。。')
+var transFont3 = fontCarrier.transfer('./test/pf.ttf')
+
+//测试对象set
+var gs3 = transFont3.getGlyph('人之初，性本善')
+font.setGlyph(gs3)
+
 font.output({
   path:'./test/font2'
 })
@@ -64,7 +71,8 @@ var path = font.getSvg('我',{
   skipViewport:true
 })
 fs.writeFileSync('./test/export.svg',path)
-//测试多个
-font.getSvg('我是好人')
 
-
+var path2 = font.getSvg('爱',{
+  skipViewport:true
+})
+fs.writeFileSync('./test/export2.svg',path2)

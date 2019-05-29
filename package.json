@@ -1,14 +1,20 @@
 {
   "name": "font-carrier",
-  "version": "0.0.12",
+  "version": "0.1.0",
   "description": "字体搬运工，中文字体解决方案，iconfont",
   "main": "./lib/index.js",
+  "scripts": {
+    "test": "node ./test/index.js"
+  },
   "keywords": [
     "font",
     "webfont",
     "font-carrier"
   ],
-  "author": "purplebamboo <xhzhuweikang@163.com>",
+  "author": [
+    "purplebamboo <xhzhuweikang@163.com>",
+    "yisibl <percyley@qq.com>"
+  ],
   "dependencies": {
     "jdataview": "2.5.0",
     "lodash": "3.7.0",
@@ -20,6 +26,7 @@
     "ttf2eot": "1.3.0",
     "ttf2svg": "0.0.7",
     "ttf2woff": "1.3.0",
+    "ttf2woff2": "2.0.3",
     "xmldom": "0.1.19"
   },
   "repository": {
@@ -27,9 +34,6 @@
     "url": "git://github.com/purplebamboo/font-carrier.git"
   },
   "devDependencies": {},
-  "scripts": {
-    "test": "node ./test/index.js"
-  },
   "engines": {
     "node": ">= 0.11.x"
   }

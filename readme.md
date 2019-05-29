@@ -2,7 +2,7 @@
 
 本项目 fork 自 [font-carrier](https://github.com/purplebamboo/font-carrier)。 由于 font-carrier 无人维护，特此开一个新分支。做一些特性的更新与 bug 的修复。
 
-[![npm version](https://badge.fury.io/js/font-carrier.svg)](http://badge.fury.io/js/font-carrier) [![Build Status](https://travis-ci.org/purplebamboo/font-carrier.svg?branch=master)](https://travis-ci.org/purplebamboo/font-carrier)
+[![npm version](https://badge.fury.io/js/font-carrier2.svg)](https://badge.fury.io/js/font-carrier2) [![Build Status](https://travis-ci.org/guowenfh/font-carrier2.svg?branch=master)](https://travis-ci.org/guowenfh/font-carrier2)
 
 font-carrier2 是一个功能强大的字体操作库，使用它你可以随心所欲地操作字体。
 

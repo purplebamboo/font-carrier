@@ -1,12 +1,14 @@
-# font-carrier
+# font-carrier2
+
+本项目 fork 自 [font-carrier](https://github.com/purplebamboo/font-carrier)。 由于 font-carrier 无人维护，特此开一个新分支。做一些特性的更新与 bug 的修复。
 
 [![npm version](https://badge.fury.io/js/font-carrier.svg)](http://badge.fury.io/js/font-carrier) [![Build Status](https://travis-ci.org/purplebamboo/font-carrier.svg?branch=master)](https://travis-ci.org/purplebamboo/font-carrier)
 
-font-carrier 是一个功能强大的字体操作库，使用它你可以随心所欲地操作字体。
+font-carrier2 是一个功能强大的字体操作库，使用它你可以随心所欲地操作字体。
 
 一个字体 font，包含若干字形 glyph。比如我们浏览器里渲染`我`，浏览器就会去当前设置的font里面找到 `我`对应的字形 glyph，使用它的形状来渲染。不同的字体的`我`的字形形状不一，所以才有差别。
 
-font-carrier 封装了简单的 API，让你可以将某个 SVG，设置成一个字对应的字形。也可以通过解析已有字体，拿到某个字在这个字体下面对应的 SVG。让你通过 SVG 的维度随意修改字体展现样式。
+font-carrier2 封装了简单的 API，让你可以将某个 SVG，设置成一个字对应的字形。也可以通过解析已有字体，拿到某个字在这个字体下面对应的 SVG。让你通过 SVG 的维度随意修改字体展现样式。
 
 我们不生产字体，我们只是字体的搬运工
 
@@ -33,7 +35,7 @@ font-carrier 封装了简单的 API，让你可以将某个 SVG，设置成一�
 
 
 ```
-npm install font-carrier --save
+npm install font-carrier2 --save
 ```
 
 
@@ -42,13 +44,13 @@ npm install font-carrier --save
 ### Step-1：创建一个空白字体，或者解析一个已有的字体，这样都可以得到一个字体对象
 
 ``` js
-var fontCarrier = require('font-carrier')
+var fontCarrier2 = require('font-carrier2')
 
 //创建空白字体对象
-var font = fontCarrier.create()
+var font = fontCarrier2.create()
 
 //从其他字体解析
-var transFont = fontCarrier.transfer('./test/test.ttf')
+var transFont = fontCarrier2.transfer('./test/test.ttf')
 ```
 
 ### Step-2：拿到字体对象后，你就可以使用 SVG 随意操作字体了
@@ -118,9 +120,9 @@ font.output({
 
 ```js
 
-var fontCarrier = require('font-carrier')
+var fontCarrier2 = require('font-carrier')
 // 创建空白字体，使用 SVG 生成字体
-var font = fontCarrier.create()
+var font = fontCarrier2.create()
 var love = fs.readFileSync('./test/svgs/love.svg').toString()
 var mail = fs.readFileSync('./test/svgs/mail.svg').toString()
 
@@ -146,10 +148,10 @@ font.output({
 
 ``` js
 
-var fontCarrier = require('font-carrier')
-var transFont = fontCarrier.transfer('./test/test.ttf')//改成存在的字体文件地址
+var fontCarrier2 = require('font-carrier2')
+var transFont = fontCarrier2.transfer('./test/test.ttf')//改成存在的字体文件地址
 // 生成空白字体
-var font = fontCarrier.create()
+var font = fontCarrier2.create()
 
 var gs = transFont.getGlyph('我是方正')
 // 设置到空白字体里面
@@ -169,8 +171,8 @@ font.output({
 
 ``` js
 
-var fontCarrier = require('font-carrier')
-var transFont = fontCarrier.transfer('./test/test.ttf')
+var fontCarrier2 = require('font-carrier2')
+var transFont = fontCarrier2.transfer('./test/test.ttf')
 // 会自动根据当前的输入的文字过滤精简字体
 transFont.min('我是精简后的字体，我可以重复')
 transFont.output({

@@ -1,5 +1,5 @@
 {
-  "name": "font-carrier",
+  "name": "font-carrier2",
   "version": "0.1.0",
   "description": "字体搬运工，中文字体解决方案，iconfont",
   "main": "./lib/index.js",
@@ -9,11 +9,12 @@
   "keywords": [
     "font",
     "webfont",
-    "font-carrier"
+    "font-carrier2"
   ],
   "author": [
     "purplebamboo <xhzhuweikang@163.com>",
-    "yisibl <percyley@qq.com>"
+    "yisibl <percyley@qq.com>",
+    "guowenfh <guowenfh@gmail.com>"
   ],
   "dependencies": {
     "lodash": "^4.17.11",
@@ -30,7 +31,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/purplebamboo/font-carrier.git"
+    "url": "git://github.com/guowenfh/font-carrier2.git"
   },
   "devDependencies": {},
   "engines": {

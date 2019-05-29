@@ -1,7 +1,7 @@
 var fs = require('fs')
 //测试新建字体
 
-var fontCarrier = require('../lib/index.js')
+var fontCarrier2 = require('../lib/index.js')
 
 var circle = fs.readFileSync('./test/svgs/circle.svg').toString()
 var love = fs.readFileSync('./test/svgs/love.svg').toString()
@@ -9,7 +9,7 @@ var mail = fs.readFileSync('./test/svgs/mail.svg').toString()
 
 
 //创建空白字体，使用svg生成字体
-var font = fontCarrier.create()
+var font = fontCarrier2.create()
 
 font.setGlyph('爱',{
   svg:love,
@@ -27,13 +27,13 @@ font.output({
 console.log('由于需要读取转换2m的方正字体，所以会很慢。。。')
 
 //测试从其他字体获取字形
-var transFont = fontCarrier.transfer('./test/test.ttf')
+var transFont = fontCarrier2.transfer('./test/test.ttf')
 var a = transFont.getGlyph('&#xFF0C;')
 
 font.setGlyph('哈',a)
 
 console.log('开始解析方正字体。。。')
-var transFont2 = fontCarrier.transfer('./test/fz.ttf')
+var transFont2 = fontCarrier2.transfer('./test/fz.ttf')
 console.log('解析结束，实际使用中一般不会解析这么大的字体库。。。')
 
 //测试对象set

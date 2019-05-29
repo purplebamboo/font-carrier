@@ -3,11 +3,11 @@
 
 ## 生成一个字体
 
-使用`fontCarrier.create(options)`生成一个空白字体对像 
+使用`fontCarrier2.create(options)`生成一个空白字体对像
 
 * options是字体对象的构造参数，具体见下面的 font 对象部分
 
-使用`fontCarrier.transfer(path,options)`解析一个已有字体，支持svg,ttf的字体。
+使用`fontCarrier2.transfer(path,options)`解析一个已有字体，支持svg,ttf的字体。
 
 * `path` 支持文件地址，也支持文件 buffer。
 * `options` 是字体对象的构造参数，具体见下面的 font 对象部分
@@ -16,13 +16,13 @@ eg.
 
 ``` js
 // 创建空白字体
-var font = fontCarrier.create()
+var font = fontCarrier2.create()
 
 // 从其他字体解析
-var transFont = fontCarrier.transfer('./test/test.ttf')
+var transFont = fontCarrier2.transfer('./test/test.ttf')
 // same as
 // var buffer = fs.readFileSync('./test/test.ttf')
-// var transFont = fontCarrier.transfer(buffer)
+// var transFont = fontCarrier2.transfer(buffer)
 ```
 ## 导出字体
 
@@ -47,7 +47,7 @@ font.output({
 
 ## 相关对象
 
-font-carrier 里面有三种对象 font，fontface，glyph。每个对象都有自己的构造参数包含一些初始化信息。所有的初始化参数后面都可以使用 `get(key)`，`set(key,value)` 来进行简单的操作。
+font-carrier2 里面有三种对象 font，fontface，glyph。每个对象都有自己的构造参数包含一些初始化信息。所有的初始化参数后面都可以使用 `get(key)`，`set(key,value)` 来进行简单的操作。
 
 
 ### font 对象

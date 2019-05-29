@@ -7,7 +7,7 @@
 
 ```js
 // 创建空白字体，使用svg生成字体
-var font = fontCarrier.create()
+var font = fontCarrier2.create()
 var love = fs.readFileSync('./test/svgs/love.svg').toString()
 var mail = fs.readFileSync('./test/svgs/mail.svg').toString()
 
@@ -32,7 +32,7 @@ font.output({
 从其他字体导出一些图标到自己的库里
 
 ``` js
-var transFont = fontCarrier.transfer('./test/test.ttf')
+var transFont = fontCarrier2.transfer('./test/test.ttf')
 
 var gs = transFont2.getGlyph('我是方正')
 // 设置到上面案例一里的字体里面

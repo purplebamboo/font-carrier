@@ -19,11 +19,11 @@ font-carrier2 封装了简单的 API，让你可以将某个 SVG，设置成一�
 # Features
 
 * 支持创建一个空白字体
-* 支持解析已有字体(ttf，SVG)
-* 支持使用 SVG来设置字的展现
-* 支持解析 SVG的各种转换还有各种非 path 图形
+* 支持解析已有字体(ttf，otf, woff, SVG)
+* 支持使用 SVG 来设置字的展现
+* 支持解析 SVG 的各种转换还有各种非 path 图形
 * 支持针对某一个字，导出对应的 SVG
-* 支持导出四种浏览器主流字体（ttf，eot，woff，svg）
+* 支持导出五种浏览器主流字体（ttf，eot，woff，woff2，svg）
 * 支持设置各种字体相关内容
 
 

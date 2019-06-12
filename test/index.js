@@ -41,7 +41,7 @@ var gs = transFont2.getGlyph('我是方正')
 font.setGlyph(gs)
 
 console.log('开始解析苹方字体。。。')
-var transFont3 = fontCarrier.transfer('./test/pf.ttf')
+var transFont3 = fontCarrier.transfer('./test/PingFangSC.ttf')
 
 //测试对象set
 var gs3 = transFont3.getGlyph('人之初，性本善')

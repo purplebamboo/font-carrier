@@ -43,6 +43,47 @@
 </style>
   <h1>测试-使用其他字体导入到当前字体</h1>
   <div class="font-2">爱&#xe600;&#xe601;我是方正哈其他文字</div>
+  <p>
+    <span>人</span>
+    <span>之</span>
+    <span class="font-2">初</span>
+    <span>，</span>
+    <span class="font-2">性</span>
+    <span>本</span>
+    <span class="font-2">善</span>
+  </p>
+</div>
+
+<div>
+  <style type="text/css">
+    @font-face {
+      font-family: 'font2';
+      src:url('./font2.eot'); /* IE9 */
+      src: url('./font2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('./font2.woff2') format('woff2'),
+      url('./font2.woff') format('woff'),
+      url('./font2.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url('./font2.svg#iconfont'); /* iOS 4.1- */
+    }
+    .font-2{
+      font-family:"font2";font-size:16px;font-style:normal;
+    }
+  </style>
+<h1>测试-新旧文字与图标混排</h1>
+<p>
+  <span class="font-2">北</span>
+  <span>冥</span>
+  <span class="font-2">有</span>
+  <span>鱼</span>
+  <span class="font-2">，</span>
+  <span class="font-2">爱</span>
+  <span class="font-2">其</span>
+  <span>名</span>
+  <span class="font-2">&#xe600;</span>
+  <span class="font-2">为</span>
+  <span>鲲</span>
+  <span class="font-2">&#xe601;</span>
+</p>
 </div>
 
 <div>
@@ -69,6 +110,7 @@
 
   <h1>测试-从已有字体导出svg</h1>
   <iframe src="./export.svg"></iframe>
+  <iframe src="./export2.svg"></iframe>
 </div>
 
 </body>

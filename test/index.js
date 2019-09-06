@@ -6,7 +6,7 @@ var fontCarrier = require('../lib/index.js')
 var circle = fs.readFileSync('./test/svgs/circle.svg').toString()
 var love = fs.readFileSync('./test/svgs/love.svg').toString()
 var mail = fs.readFileSync('./test/svgs/mail.svg').toString()
-
+var clock = fs.readFileSync('./test/svgs/clock.svg').toString()
 
 //创建空白字体，使用svg生成字体
 var font = fontCarrier.create()
@@ -14,6 +14,11 @@ var font = fontCarrier.create()
 font.setGlyph('爱',{
   svg:love,
   glyphName:'爱'
+})
+
+font.setGlyph('钟',{
+  svg: clock,
+  glyphName: '爱'
 })
 
 font.setSvg('&#xe600;',circle)

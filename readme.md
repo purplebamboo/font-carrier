@@ -13,35 +13,31 @@ font-carrier 封装了简单的 API，让你可以将某个 SVG，设置成一�
 - 需要图形操作客户端，请移步[panda](https://github.com/stormtea123/panda)
 - 需要命令行解析代码，按需精简字体，请移步 [font-collector](https://github.com/JailBreakC/font-collector)
 
-
 # Features
 
 * 支持创建一个空白字体
 * 支持解析已有字体(ttf，SVG)
-* 支持使用 SVG来设置字的展现
-* 支持解析 SVG的各种转换还有各种非 path 图形
+* 支持使用 SVG 来设置字的展现
+* 支持解析 SVG 的各种转换还有各种非 path 图形
 * 支持针对某一个字，导出对应的 SVG
-* 支持导出四种浏览器主流字体（ttf，eot，woff，svg）
+* 支持导出5种浏览器主流字体（ttf，eot，woff，woff2，svg）
 * 支持设置各种字体相关内容
-
 
 # Getting Start
 
-如果对iconfont还不是很了解的，请先参考这篇[文章](http://purplebamboo.github.io/2014/01/09/iconfont/)
+如果对 iconfont 还不是很了解的，请先参考这篇[文章](http://purplebamboo.github.io/2014/01/09/iconfont/)
 
 ## Install
 
-
-```
+```sh
 npm install font-carrier --save
 ```
 
-
-## Use
+## Usage
 
 ### Step-1：创建一个空白字体，或者解析一个已有的字体，这样都可以得到一个字体对象
 
-``` js
+```js
 var fontCarrier = require('font-carrier')
 
 //创建空白字体对象
@@ -53,7 +49,7 @@ var transFont = fontCarrier.transfer('./test/test.ttf')
 
 ### Step-2：拿到字体对象后，你就可以使用 SVG 随意操作字体了
 
-``` js
+```js
 //可以设置某个字对应的形状,当然 unicode 也是支持的
 font.setSvg('我', fs.readFileSync('./test/svgs/circle.svg').toString())
 
@@ -70,23 +66,21 @@ var svg = font.getSvg('我')
 //也可以先拿到对应的字形对象，再导出对应的svg
 var glyph = transFont.getGlyph('我')
 glyph.toSvg()
-
 ```
 
 ### Step-3：使用get,set各种操作完后，你可以选择导出字体
 
-``` js
-// 默认会导出 svg，ttf，eot，woff 四种字体，
+```js
+// 默认会导出 svg，ttf，eot，woff，woff2 5种字体，
 // 可以不传 path，这样会默认返回一个包含四个字体 buffer 的对象
 font.output({
   path: './iconfont'
 })
-
 ```
 
 ### Step-4：导出字体后就可以在 Web 中使用了
 
-``` html
+```html
 <style type="text/css">
   @font-face {
     font-family: 'iconfont';
@@ -107,7 +101,6 @@ font.output({
 
 <span class="iconfont">我</span>
 //此时渲染出来的图形就是你设置的 SVG的样子
-
 ```
 
 ## Example
@@ -117,7 +110,6 @@ font.output({
 使用 SVG 设置一些 icon
 
 ```js
-
 var fontCarrier = require('font-carrier')
 // 创建空白字体，使用 SVG 生成字体
 var font = fontCarrier.create()
@@ -136,16 +128,13 @@ font.setSvg('&#xe601;', mail)
 font.output({
   path: './test'
 })
-
 ```
-
 
 ### 案例二
 
 从其他字体导出一些图标到自己的库里
 
-``` js
-
+```js
 var fontCarrier = require('font-carrier')
 var transFont = fontCarrier.transfer('./test/test.ttf')//改成存在的字体文件地址
 // 生成空白字体
@@ -160,15 +149,13 @@ font.output({
   path: './test'
 })
 
-
 ```
 
 ### 案例三
 
 对中文字体精简
 
-``` js
-
+```js
 var fontCarrier = require('font-carrier')
 var transFont = fontCarrier.transfer('./test/test.ttf')
 // 会自动根据当前的输入的文字过滤精简字体
@@ -176,21 +163,18 @@ transFont.min('我是精简后的字体，我可以重复')
 transFont.output({
   path: './min'
 })
-
 ```
-
 
 ## API
 
 更多文档请看[这里](./doc/api.md)
 
-
 ## Test
 
 先确保安装依赖包 `npm install` 再运行`npm test` 之后访问 `./test/index.html`
 
+# [ChangeLog](changelog.md)
 
-# Licence
+# [Licence](LICENSE)
 
 MIT
-

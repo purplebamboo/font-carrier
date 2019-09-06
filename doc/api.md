@@ -1,6 +1,5 @@
 # API
 
-
 ## 生成一个字体
 
 使用`fontCarrier.create(options)`生成一个空白字体对像 
@@ -14,7 +13,7 @@
 
 eg.
 
-``` js
+```js
 // 创建空白字体
 var font = fontCarrier.create()
 
@@ -24,31 +23,30 @@ var transFont = fontCarrier.transfer('./test/test.ttf')
 // var buffer = fs.readFileSync('./test/test.ttf')
 // var transFont = fontCarrier.transfer(buffer)
 ```
+
 ## 导出字体
 
-一旦你拿到一个字体对象后，你可以选择导出它，默认会生成 svg,ttf,woff,eot 四种格式。
+一旦你拿到一个字体对象后，你可以选择导出它，默认会生成 svg，ttf，woff，woff2，eot 四种字体格式。
 
 `font.output(options)`
 
 * options.path  可选。导出的文件路径，不需要后缀
-* options.types 可选。导出的字体类型默认是 ['ttf','eot','woff','svg']
+* options.types 可选。导出的字体类型默认是 ['ttf', 'eot', 'woff', woff2, 'svg']
 
 返回一个对象，包含导出的所有字体的buffer
 
 eg.
 
-``` js
+```js
 font.output({
   path: './iconfont',
   types: [ttf]
 })
-
 ```
 
 ## 相关对象
 
 font-carrier 里面有三种对象 font，fontface，glyph。每个对象都有自己的构造参数包含一些初始化信息。所有的初始化参数后面都可以使用 `get(key)`，`set(key,value)` 来进行简单的操作。
-
 
 ### font 对象
 
@@ -59,7 +57,6 @@ font-carrier 里面有三种对象 font，fontface，glyph。每个对象都有�
 * id: 字体的 postscript name，默认是 1024
 * horizAdvX: 字体的水平画布大小，默认是 1024
 * vertAdvY: 字体的垂直画布大小，默认是 1024
-
 
 #### `font.getFontface()`
 获取对应的 fontface 对象
@@ -86,7 +83,7 @@ font-carrier 里面有三种对象 font，fontface，glyph。每个对象都有�
   * key是对应的字，也可以是 unicode
   * value是对应的svg图形
 2. font.setSvg({key,value}) 可用于设置多个
-  key,value同上，主要可以使用object的方式一次性设置多个
+  * key,value 同上，主要可以使用 object 的方式一次性设置多个
 
 #### `font.getGlyph(keys)`
 获取指定文字（keys）的 glyph 对象。
@@ -94,7 +91,6 @@ font-carrier 里面有三种对象 font，fontface，glyph。每个对象都有�
 * keys 可以是单个的字，也可以是多个字组成的字符串，也可以是数组。
 
 如果是单个字就返回一个 glyph 对象，否则返回一个 hash 对象，key 是 unicode，value 是对应的 glyph 对象
-
 
 #### `font.setGlyph()`
 用于针对字设置对应的 glyph 对象
@@ -104,7 +100,7 @@ font-carrier 里面有三种对象 font，fontface，glyph。每个对象都有�
   * key 是对应的字，也可以是 unicode
   * value 是对应的 glyph 对象，或者是一个 glyph 的构造参数对象
 2. font.setGlyph({key,value}) 可用于设置多个
-  key，value 同上，主要可以使用 object 的方式一次性设置多个
+  * key，value 同上，主要可以使用 object 的方式一次性设置多个
 
 #### `font.allGlyph()`
 用于返回所有的字体对象集合
@@ -132,9 +128,6 @@ font-carrier 里面有三种对象 font，fontface，glyph。每个对象都有�
 
 返回一个对象，包含导出的所有字体的 buffer
 
-
-
-
 ### fontface 对象
 
 fontface 对象包含了字体的一些特殊相关信息，参数如下：
@@ -143,7 +136,6 @@ fontface 对象包含了字体的一些特殊相关信息，参数如下：
 * unitsPerEm: 字体的 unitsPerEm 默认是 1024
 * ascent: 字体的上偏移量，默认是 812
 * descent: 字体的下偏移量，默认是 -212
-
 
 ### glyph 字形对象
 
@@ -164,7 +156,6 @@ glyph 字形对象代表了具体某个字的信息。包括下面这些参数�
 
 #### `glyph.setFont(font)`
 设置当前 glyph 的字体，会按照新的字体做一系列的变换
-
 
 #### `glyph.toSvg(path,options)`
 导出当前字形对象的 SVG

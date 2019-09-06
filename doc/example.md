@@ -1,6 +1,5 @@
 # EXAMPLE
 
-
 ## 案例一
 
 使用 SVG 设置一些 icon
@@ -23,15 +22,13 @@ font.setSvg('&#xe601;', mail)
 font.output({
   path: './test'
 })
-
 ```
-
 
 ## 案例二
 
 从其他字体导出一些图标到自己的库里
 
-``` js
+```js
 var transFont = fontCarrier.transfer('./test/test.ttf')
 
 var gs = transFont2.getGlyph('我是方正')
@@ -42,20 +39,17 @@ font.setGlyph(gs)
 font.output({
   path: './test'
 })
-
-
 ```
 
 ## 案例三
 
 对中文字体精简
 
-``` js
+```js
 // 使用上面的 transFont
 // 会自动根据当前的输入的文字过滤精简字体
 transFont.min('我是精简后的字体，我可以重复')
 transFont.output({
   path: './min'
 })
-
 ```

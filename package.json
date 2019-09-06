@@ -1,16 +1,11 @@
 {
   "name": "font-carrier",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "字体搬运工，中文字体解决方案，iconfont",
   "main": "./lib/index.js",
   "scripts": {
     "test": "node ./test/index.js"
   },
-  "keywords": [
-    "font",
-    "webfont",
-    "font-carrier"
-  ],
   "author": [
     "purplebamboo <xhzhuweikang@163.com>",
     "yisibl <percyley@qq.com>"
@@ -28,12 +23,30 @@
     "ttf2woff2": "^3.0.0",
     "xmldom": "^0.1.27"
   },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git://github.com/purplebamboo/font-carrier.git"
   },
-  "devDependencies": {},
   "engines": {
     "node": ">= 0.4.x"
-  }
+  },
+  "keywords": [
+    "font",
+    "webfont",
+    "webfont",
+    "iconfont",
+    "font-cli",
+    "svg2ttf",
+    "ttf2eot",
+    "ttf2woff",
+    "ttf2svg",
+    "fontmin",
+    "font-mini",
+    "font subset",
+    "font subsetting",
+    "font converter",
+    "font-carrier"
+  ],
+  "license": "MIT"
 }

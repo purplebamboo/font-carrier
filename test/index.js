@@ -2,11 +2,21 @@ var fs = require('fs')
 //测试新建字体
 
 var fontCarrier = require('../lib/index.js')
+var fontEngine = require('../lib/helper/engine')
 
 var circle = fs.readFileSync('./test/svgs/circle.svg').toString()
 var love = fs.readFileSync('./test/svgs/love.svg').toString()
 var mail = fs.readFileSync('./test/svgs/mail.svg').toString()
 var clock = fs.readFileSync('./test/svgs/clock.svg').toString()
+var ttfFont = fs.readFileSync('./test/color-font.ttf')
+
+// ttf 文件转换为其他格式
+fontEngine.convert({
+  input: ttfFont,
+  inputTypes: 'ttf',
+  path: './test/color-font-out',
+  types: ['woff', 'woff2'],
+})
 
 //创建空白字体，使用svg生成字体
 var font = fontCarrier.create()

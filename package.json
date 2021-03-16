@@ -1,6 +1,6 @@
 {
   "name": "font-carrier",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "字体搬运工，中文字体解决方案，iconfont",
   "main": "./lib/index.js",
   "scripts": {

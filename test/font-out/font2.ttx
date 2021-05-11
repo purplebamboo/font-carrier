@@ -27,12 +27,12 @@
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="1.0"/>
     <fontRevision value="1.0"/>
-    <checkSumAdjustment value="0x3d5224bf"/>
+    <checkSumAdjustment value="0x3d520d0f"/>
     <magicNumber value="0x5f0f3cf5"/>
     <flags value="00000000 00001011"/>
     <unitsPerEm value="1024"/>
-    <created value="Tue May 11 07:15:35 2021"/>
-    <modified value="Tue May 11 07:15:35 2021"/>
+    <created value="Tue May 11 07:40:51 2021"/>
+    <modified value="Tue May 11 07:40:51 2021"/>
     <xMin value="-1"/>
     <yMin value="-212"/>
     <xMax value="1350"/>

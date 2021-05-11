@@ -45,7 +45,7 @@ font.setSvg('&#xe601;',mail)
 //console.log(font.toString())
 
 font.output({
-  path:'./test/font1',
+  path: './test/font-out/font1',
   types: ['ttf'],
 })
 
@@ -73,7 +73,7 @@ var gs3 = transFont3.getGlyph('人之初，性本善')
 font.setGlyph(gs3)
 
 font.output({
-  path:'./test/font2'
+  path: './test/font-out/font2'
 })
 
 
@@ -81,7 +81,7 @@ font.output({
 //测试精简字体
 transFont2.min('我是精简后的字体，我可以重复,我的x被覆盖了。')
 transFont2.output({
-  path:'./test/font3'
+  path: './test/font-out/font3'
 })
 
 //直接output

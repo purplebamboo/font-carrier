@@ -5,7 +5,7 @@
   "main": "./lib/index.js",
   "scripts": {
     "test": "node ./test/index.js",
-    "ttx": "ttx -f test/font1.ttf test/font2.ttf test/font3.ttf test/test.ttf"
+    "ttx": "ttx -f test/font-out/font1.ttf test/font-out/font2.ttf test/font-out/font3.ttf test/font-out/arrow-up.ttf"
   },
   "author": [
     "purplebamboo <xhzhuweikang@163.com>",

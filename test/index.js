@@ -9,13 +9,22 @@ var love = fs.readFileSync('./test/svgs/love.svg').toString()
 var mail = fs.readFileSync('./test/svgs/mail.svg').toString()
 var clock = fs.readFileSync('./test/svgs/clock.svg').toString()
 var ttfFont = fs.readFileSync('./test/color-font.ttf')
+var arrowUpFont = fs.readFileSync('./test/svg-fonts/arrow-up.svg')
 
-// ttf 文件转换为其他格式
+// 彩色字体（COLRv0）转换为其他格式
 fontEngine.convert({
   input: ttfFont,
   inputTypes: 'ttf',
-  path: './test/color-font-out',
-  types: ['woff', 'woff2', 'foo'], // Ignore unrecognized format foo
+  path: './test/font-out/color-font-out',
+  types: ['woff', 'woff2', 'ttf', 'foo'], // Ignore unrecognized format foo
+})
+
+// SVG 字体格式转换为 ttf
+fontEngine.convert({
+  input: arrowUpFont,
+  inputTypes: 'svg',
+  path: './test/font-out/arrow-up',
+  types: ['ttf'],
 })
 
 // 创建空白字体，使用 SVG 生成字体

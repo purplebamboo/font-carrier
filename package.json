@@ -1,27 +1,27 @@
 {
   "name": "font-carrier",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "字体搬运工，中文字体解决方案，iconfont",
   "main": "./lib/index.js",
   "scripts": {
     "test": "node ./test/index.js",
-    "ttx": "ttx -f test/font1.ttf test/font2.ttf test/font3.ttf test/test.ttf"
+    "ttx": "ttx -f test/font-out/font1.ttf test/font-out/font2.ttf test/font-out/font3.ttf test/font-out/arrow-up.ttf"
   },
   "author": [
     "purplebamboo <xhzhuweikang@163.com>",
     "yisibl <percyley@qq.com>"
   ],
   "dependencies": {
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "multiline": "^2.0.0",
     "opentype.js": "^1.1.0",
-    "svg2ttf": "^4.3.0",
+    "svg2ttf": "^5.2.0",
     "svg_pathify": "^0.0.8",
-    "svgpath": "^2.2.2",
+    "svgpath": "^2.3.1",
     "ttf2eot": "^2.0.0",
     "ttf2svg": "0.0.7",
-    "ttf2woff": "^2.0.1",
-    "ttf2woff2": "^3.0.0",
+    "ttf2woff": "^2.0.2",
+    "ttf2woff2": "^4.0.2",
     "xmldom": "^0.1.27"
   },
   "devDependencies": {},
@@ -30,7 +30,7 @@
     "url": "git://github.com/purplebamboo/font-carrier.git"
   },
   "engines": {
-    "node": ">= 0.4.x"
+    "node": ">=12.19.0"
   },
   "keywords": [
     "font",

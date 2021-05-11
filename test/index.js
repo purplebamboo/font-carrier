@@ -9,16 +9,25 @@ var love = fs.readFileSync('./test/svgs/love.svg').toString()
 var mail = fs.readFileSync('./test/svgs/mail.svg').toString()
 var clock = fs.readFileSync('./test/svgs/clock.svg').toString()
 var ttfFont = fs.readFileSync('./test/color-font.ttf')
+var arrowUpFont = fs.readFileSync('./test/svg-fonts/arrow-up.svg')
 
-// ttf 文件转换为其他格式
+// 彩色字体（COLRv0）转换为其他格式
 fontEngine.convert({
   input: ttfFont,
   inputTypes: 'ttf',
-  path: './test/color-font-out',
-  types: ['woff', 'woff2'],
+  path: './test/font-out/color-font-out',
+  types: ['woff', 'woff2', 'ttf', 'foo'], // Ignore unrecognized format foo
 })
 
-//创建空白字体，使用svg生成字体
+// SVG 字体格式转换为 ttf
+fontEngine.convert({
+  input: arrowUpFont,
+  inputTypes: 'svg',
+  path: './test/font-out/arrow-up',
+  types: ['ttf'],
+})
+
+// 创建空白字体，使用 SVG 生成字体
 var font = fontCarrier.create()
 
 font.setGlyph('爱',{
@@ -36,7 +45,8 @@ font.setSvg('&#xe601;',mail)
 //console.log(font.toString())
 
 font.output({
-  path:'./test/font1'
+  path: './test/font-out/font1',
+  types: ['ttf'],
 })
 
 console.log('由于需要读取转换2m的方正字体，所以会很慢。。。')
@@ -63,7 +73,7 @@ var gs3 = transFont3.getGlyph('人之初，性本善')
 font.setGlyph(gs3)
 
 font.output({
-  path:'./test/font2'
+  path: './test/font-out/font2'
 })
 
 
@@ -71,7 +81,7 @@ font.output({
 //测试精简字体
 transFont2.min('我是精简后的字体，我可以重复,我的x被覆盖了。')
 transFont2.output({
-  path:'./test/font3'
+  path: './test/font-out/font3'
 })
 
 //直接output

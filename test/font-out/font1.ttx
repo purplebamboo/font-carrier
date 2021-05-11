@@ -15,12 +15,12 @@
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="1.0"/>
     <fontRevision value="1.0"/>
-    <checkSumAdjustment value="0x7d2cb6ff"/>
+    <checkSumAdjustment value="0x7c06b8e3"/>
     <magicNumber value="0x5f0f3cf5"/>
     <flags value="00000000 00001011"/>
     <unitsPerEm value="1024"/>
-    <created value="Tue Mar 16 13:19:14 2021"/>
-    <modified value="Tue Mar 16 13:19:14 2021"/>
+    <created value="Tue May 11 07:40:41 2021"/>
+    <modified value="Tue May 11 07:40:41 2021"/>
     <xMin value="-1"/>
     <yMin value="-212"/>
     <xMax value="1350"/>
@@ -107,7 +107,7 @@
     <ulUnicodeRange3 value="00000000 00000000 00000000 00000000"/>
     <ulUnicodeRange4 value="00000000 00000000 00000000 00000000"/>
     <achVendID value="PfEd"/>
-    <fsSelection value="00000000 01000000"/>
+    <fsSelection value="00000000 11000000"/>
     <usFirstCharIndex value="120"/>
     <usLastCharIndex value="58881"/>
     <sTypoAscender value="812"/>

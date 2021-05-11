@@ -1,0 +1,7 @@
+test/
+doc/
+.travis.yml
+.github/
+
+yarn-error.log
+yarn.lock

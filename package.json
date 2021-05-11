@@ -4,7 +4,8 @@
   "description": "字体搬运工，中文字体解决方案，iconfont",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "node ./test/index.js"
+    "test": "node ./test/index.js",
+    "ttx": "ttx -f test/font1.ttf test/font2.ttf test/font3.ttf test/test.ttf"
   },
   "author": [
     "purplebamboo <xhzhuweikang@163.com>",

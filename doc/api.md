@@ -31,7 +31,7 @@ var transFont = fontCarrier.transfer('./test/test.ttf')
 `font.output(options)`
 
 * options.path  可选。导出的文件路径，不需要后缀
-* options.types 可选。导出的字体类型默认是 ['ttf', 'eot', 'woff', woff2, 'svg']
+* options.types 可选。导出的字体类型默认是 ['ttf', 'eot', 'woff', woff2, 'svg']，忽略不支持的格式
 
 返回一个对象，包含导出的所有字体的buffer
 
@@ -40,7 +40,7 @@ eg.
 ```js
 font.output({
   path: './iconfont',
-  types: [ttf]
+  types: ['ttf'],
 })
 ```
 

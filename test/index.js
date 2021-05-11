@@ -15,10 +15,10 @@ fontEngine.convert({
   input: ttfFont,
   inputTypes: 'ttf',
   path: './test/color-font-out',
-  types: ['woff', 'woff2'],
+  types: ['woff', 'woff2', 'foo'], // Ignore unrecognized format foo
 })
 
-//创建空白字体，使用svg生成字体
+// 创建空白字体，使用 SVG 生成字体
 var font = fontCarrier.create()
 
 font.setGlyph('爱',{
@@ -36,7 +36,8 @@ font.setSvg('&#xe601;',mail)
 //console.log(font.toString())
 
 font.output({
-  path:'./test/font1'
+  path:'./test/font1',
+  types: ['ttf'],
 })
 
 console.log('由于需要读取转换2m的方正字体，所以会很慢。。。')

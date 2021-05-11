@@ -30,12 +30,12 @@
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="1.0"/>
     <fontRevision value="1.0"/>
-    <checkSumAdjustment value="0xdb528fd9"/>
+    <checkSumAdjustment value="0xda2c93ed"/>
     <magicNumber value="0x5f0f3cf5"/>
     <flags value="00000000 00001011"/>
     <unitsPerEm value="1000"/>
-    <created value="Tue Mar 16 13:19:24 2021"/>
-    <modified value="Tue Mar 16 13:19:24 2021"/>
+    <created value="Tue May 11 07:15:35 2021"/>
+    <modified value="Tue May 11 07:15:35 2021"/>
     <xMin value="0"/>
     <yMin value="-107"/>
     <xMax value="1000"/>
@@ -122,7 +122,7 @@
     <ulUnicodeRange3 value="00000000 00000000 00000000 00000000"/>
     <ulUnicodeRange4 value="00000000 00000000 00000000 00000000"/>
     <achVendID value="PfEd"/>
-    <fsSelection value="00000000 01000000"/>
+    <fsSelection value="00000000 11000000"/>
     <usFirstCharIndex value="44"/>
     <usLastCharIndex value="65292"/>
     <sTypoAscender value="865"/>

@@ -15,12 +15,12 @@
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="1.0"/>
     <fontRevision value="1.0"/>
-    <checkSumAdjustment value="0x7c06b8e3"/>
+    <checkSumAdjustment value="0x15f2a61b"/>
     <magicNumber value="0x5f0f3cf5"/>
     <flags value="00000000 00001011"/>
     <unitsPerEm value="1024"/>
-    <created value="Tue May 11 07:40:41 2021"/>
-    <modified value="Tue May 11 07:40:41 2021"/>
+    <created value="Thu May 20 08:29:35 2021"/>
+    <modified value="Thu May 20 08:29:35 2021"/>
     <xMin value="-1"/>
     <yMin value="-212"/>
     <xMax value="1350"/>
@@ -113,7 +113,7 @@
     <sTypoAscender value="812"/>
     <sTypoDescender value="-212"/>
     <sTypoLineGap value="92"/>
-    <usWinAscent value="813"/>
+    <usWinAscent value="904"/>
     <usWinDescent value="212"/>
     <ulCodePageRange1 value="00000000 00000000 00000000 00000001"/>
     <ulCodePageRange2 value="00000000 00000000 00000000 00000000"/>
@@ -387,8 +387,9 @@
         <pt x="0" y="763" on="0"/>
         <pt x="0" y="728" on="1"/>
         <pt x="0" y="-128" on="1"/>
-        <pt x="0" y="-161" on="0"/>
-        <pt x="53" y="-211" on="0"/>
+        <pt x="0" y="-150" on="0"/>
+        <pt x="25" y="-188" on="0"/>
+        <pt x="65" y="-211" on="0"/>
         <pt x="87" y="-211" on="1"/>
         <pt x="1274" y="-211" on="1"/>
         <pt x="1307" y="-211" on="0"/>
@@ -444,9 +445,7 @@
 
   <name>
     <namerecord nameID="0" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      
-  Created by font-carrier
-  
+      Created by font-carrier
     </namerecord>
     <namerecord nameID="1" platformID="1" platEncID="0" langID="0x0" unicode="True">
       iconfont
@@ -473,9 +472,7 @@
       http://fontello.com
     </namerecord>
     <namerecord nameID="0" platformID="3" platEncID="1" langID="0x409">
-      
-  Created by font-carrier
-  
+      Created by font-carrier
     </namerecord>
     <namerecord nameID="1" platformID="3" platEncID="1" langID="0x409">
       iconfont

@@ -11,16 +11,16 @@
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="1.0"/>
     <fontRevision value="1.0"/>
-    <checkSumAdjustment value="0x91d8b7bf"/>
+    <checkSumAdjustment value="0x1d208df5"/>
     <magicNumber value="0x5f0f3cf5"/>
     <flags value="00000000 00001011"/>
     <unitsPerEm value="1024"/>
-    <created value="Tue May 11 07:40:41 2021"/>
-    <modified value="Tue May 11 07:40:41 2021"/>
+    <created value="Wed May 26 09:43:49 2021"/>
+    <modified value="Wed May 26 09:43:49 2021"/>
     <xMin value="0"/>
     <yMin value="-130"/>
     <xMax value="1024"/>
-    <yMax value="32148"/>
+    <yMax value="896"/>
     <macStyle value="00000000 00000000"/>
     <lowestRecPPEM value="8"/>
     <fontDirectionHint value="2"/>
@@ -52,7 +52,7 @@
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="0x10000"/>
     <numGlyphs value="2"/>
-    <maxPoints value="29"/>
+    <maxPoints value="28"/>
     <maxContours value="1"/>
     <maxCompositePoints value="0"/>
     <maxCompositeContours value="0"/>
@@ -70,7 +70,7 @@
   <OS_2>
     <!-- The fields 'usFirstCharIndex' and 'usLastCharIndex'
          will be recalculated by the compiler -->
-    <version value="1"/>
+    <version value="5"/>
     <xAvgCharWidth value="1024"/>
     <usWeightClass value="500"/>
     <usWidthClass value="5"/>
@@ -109,10 +109,17 @@
     <sTypoAscender value="896"/>
     <sTypoDescender value="-128"/>
     <sTypoLineGap value="92"/>
-    <usWinAscent value="32148"/>
+    <usWinAscent value="988"/>
     <usWinDescent value="130"/>
     <ulCodePageRange1 value="00000000 00000000 00000000 00000001"/>
     <ulCodePageRange2 value="00000000 00000000 00000000 00000000"/>
+    <sxHeight value="0"/>
+    <sCapHeight value="0"/>
+    <usDefaultChar value="0"/>
+    <usBreakChar value="0"/>
+    <usMaxContext value="2"/>
+    <usLowerOpticalPointSize value="0.0"/>
+    <usUpperOpticalPointSize value="3276.75"/>
   </OS_2>
 
   <hmtx>
@@ -149,11 +156,10 @@
 
     <TTGlyph name="glyph00000"/><!-- contains no outline data -->
 
-    <TTGlyph name="up" xMin="0" yMin="-130" xMax="924" yMax="32148">
+    <TTGlyph name="up" xMin="0" yMin="-130" xMax="924" yMax="896">
       <contour>
         <pt x="567" y="-68" on="1"/>
         <pt x="567" y="693" on="1"/>
-        <pt x="567" y="32147" on="0"/>
         <pt x="567" y="694" on="1"/>
         <pt x="827" y="406" on="1"/>
         <pt x="837" y="395" on="0"/>

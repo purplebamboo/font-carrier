@@ -15,12 +15,12 @@
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="1.0"/>
     <fontRevision value="1.0"/>
-    <checkSumAdjustment value="0x15f2a61b"/>
+    <checkSumAdjustment value="0x1e74f615"/>
     <magicNumber value="0x5f0f3cf5"/>
     <flags value="00000000 00001011"/>
     <unitsPerEm value="1024"/>
-    <created value="Thu May 20 08:29:35 2021"/>
-    <modified value="Thu May 20 08:29:35 2021"/>
+    <created value="Wed May 26 09:43:49 2021"/>
+    <modified value="Wed May 26 09:43:49 2021"/>
     <xMin value="-1"/>
     <yMin value="-212"/>
     <xMax value="1350"/>
@@ -74,7 +74,7 @@
   <OS_2>
     <!-- The fields 'usFirstCharIndex' and 'usLastCharIndex'
          will be recalculated by the compiler -->
-    <version value="1"/>
+    <version value="5"/>
     <xAvgCharWidth value="924"/>
     <usWeightClass value="400"/>
     <usWidthClass value="5"/>
@@ -117,6 +117,13 @@
     <usWinDescent value="212"/>
     <ulCodePageRange1 value="00000000 00000000 00000000 00000001"/>
     <ulCodePageRange2 value="00000000 00000000 00000000 00000000"/>
+    <sxHeight value="0"/>
+    <sCapHeight value="0"/>
+    <usDefaultChar value="0"/>
+    <usBreakChar value="0"/>
+    <usMaxContext value="2"/>
+    <usLowerOpticalPointSize value="0.0"/>
+    <usUpperOpticalPointSize value="3276.75"/>
   </OS_2>
 
   <hmtx>
@@ -445,7 +452,9 @@
 
   <name>
     <namerecord nameID="0" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Created by font-carrier
+      
+  Created by font-carrier
+  
     </namerecord>
     <namerecord nameID="1" platformID="1" platEncID="0" langID="0x0" unicode="True">
       iconfont
@@ -472,7 +481,9 @@
       http://fontello.com
     </namerecord>
     <namerecord nameID="0" platformID="3" platEncID="1" langID="0x409">
-      Created by font-carrier
+      
+  Created by font-carrier
+  
     </namerecord>
     <namerecord nameID="1" platformID="3" platEncID="1" langID="0x409">
       iconfont

@@ -27,12 +27,12 @@
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="1.0"/>
     <fontRevision value="1.0"/>
-    <checkSumAdjustment value="0xd6cb8505"/>
+    <checkSumAdjustment value="0xd6a4a413"/>
     <magicNumber value="0x5f0f3cf5"/>
     <flags value="00000000 00001011"/>
     <unitsPerEm value="1024"/>
-    <created value="Wed Jun  9 03:53:30 2021"/>
-    <modified value="Wed Jun  9 03:53:30 2021"/>
+    <created value="Thu Jun 17 07:02:24 2021"/>
+    <modified value="Thu Jun 17 07:02:24 2021"/>
     <xMin value="-1"/>
     <yMin value="-212"/>
     <xMax value="1350"/>
@@ -86,7 +86,7 @@
   <OS_2>
     <!-- The fields 'usFirstCharIndex' and 'usLastCharIndex'
          will be recalculated by the compiler -->
-    <version value="5"/>
+    <version value="4"/>
     <xAvgCharWidth value="991"/>
     <usWeightClass value="400"/>
     <usWidthClass value="5"/>
@@ -134,8 +134,6 @@
     <usDefaultChar value="0"/>
     <usBreakChar value="0"/>
     <usMaxContext value="2"/>
-    <usLowerOpticalPointSize value="0.0"/>
-    <usUpperOpticalPointSize value="3276.75"/>
   </OS_2>
 
   <hmtx>

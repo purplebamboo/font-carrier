@@ -27,12 +27,12 @@
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="1.0"/>
     <fontRevision value="1.0"/>
-    <checkSumAdjustment value="0xdfc04a67"/>
+    <checkSumAdjustment value="0xd6cb8505"/>
     <magicNumber value="0x5f0f3cf5"/>
     <flags value="00000000 00001011"/>
     <unitsPerEm value="1024"/>
-    <created value="Wed May 26 09:43:56 2021"/>
-    <modified value="Wed May 26 09:43:56 2021"/>
+    <created value="Wed Jun  9 03:53:30 2021"/>
+    <modified value="Wed Jun  9 03:53:30 2021"/>
     <xMin value="-1"/>
     <yMin value="-212"/>
     <xMax value="1350"/>
@@ -1848,9 +1848,7 @@
 
   <name>
     <namerecord nameID="0" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      
-  Created by font-carrier
-  
+      Created by font-carrier
     </namerecord>
     <namerecord nameID="1" platformID="1" platEncID="0" langID="0x0" unicode="True">
       iconfont
@@ -1877,9 +1875,7 @@
       http://fontello.com
     </namerecord>
     <namerecord nameID="0" platformID="3" platEncID="1" langID="0x409">
-      
-  Created by font-carrier
-  
+      Created by font-carrier
     </namerecord>
     <namerecord nameID="1" platformID="3" platEncID="1" langID="0x409">
       iconfont

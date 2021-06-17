@@ -1,6 +1,6 @@
 {
   "name": "font-carrier",
-  "version": "0.4.0-beta.4",
+  "version": "0.4.0-beta.5",
   "description": "字体搬运工，中文字体解决方案，iconfont",
   "main": "./lib/index.js",
   "scripts": {

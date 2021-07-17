@@ -15,7 +15,7 @@ font-carrier 封装了简单的 API，让你可以将某个 SVG，设置成一�
 我们不生产字体，我们只是字体的搬运工
 
 - 需要图形操作客户端，请移步[panda](https://github.com/stormtea123/panda)
-- 需要命令行解析代码，按需精简字体，请移步 [font-collector](https://github.com/JailBreakC/font-collector)
+- 需要命令行解析代码，按需精简字体，请移步 [font-extractor](https://github.com/bung87/font-extractor)
 
 # Features
 

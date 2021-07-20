@@ -157,7 +157,7 @@ glyph 字形对象代表了具体某个字的信息。包括下面这些参数�
 #### `glyph.setFont(font)`
 设置当前 glyph 的字体，会按照新的字体做一系列的变换
 
-#### `glyph.toSvg(path,options)`
+#### `glyph.toSvg(options)`
 导出当前字形对象的 SVG
 
 * path           导出的路径，可选

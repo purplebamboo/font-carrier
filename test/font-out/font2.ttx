@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ttFont sfntVersion="\x00\x01\x00\x00" ttLibVersion="4.20">
+<ttFont sfntVersion="\x00\x01\x00\x00" ttLibVersion="4.26">
 
   <GlyphOrder>
     <!-- The 'id' attribute is only for humans; it is ignored when parsed. -->
@@ -27,12 +27,12 @@
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="1.0"/>
     <fontRevision value="1.0"/>
-    <checkSumAdjustment value="0x3d520d0f"/>
+    <checkSumAdjustment value="0xd551e953"/>
     <magicNumber value="0x5f0f3cf5"/>
     <flags value="00000000 00001011"/>
     <unitsPerEm value="1024"/>
-    <created value="Tue May 11 07:40:51 2021"/>
-    <modified value="Tue May 11 07:40:51 2021"/>
+    <created value="Fri Aug 20 12:38:08 2021"/>
+    <modified value="Fri Aug 20 12:38:08 2021"/>
     <xMin value="-1"/>
     <yMin value="-212"/>
     <xMax value="1350"/>
@@ -48,7 +48,7 @@
     <tableVersion value="0x00010000"/>
     <ascent value="812"/>
     <descent value="-212"/>
-    <lineGap value="0"/>
+    <lineGap value="92"/>
     <advanceWidthMax value="1350"/>
     <minLeftSideBearing value="-1"/>
     <minRightSideBearing value="0"/>
@@ -86,7 +86,7 @@
   <OS_2>
     <!-- The fields 'usFirstCharIndex' and 'usLastCharIndex'
          will be recalculated by the compiler -->
-    <version value="1"/>
+    <version value="4"/>
     <xAvgCharWidth value="991"/>
     <usWeightClass value="400"/>
     <usWidthClass value="5"/>
@@ -124,11 +124,16 @@
     <usLastCharIndex value="65292"/>
     <sTypoAscender value="812"/>
     <sTypoDescender value="-212"/>
-    <sTypoLineGap value="92"/>
-    <usWinAscent value="844"/>
+    <sTypoLineGap value="0"/>
+    <usWinAscent value="904"/>
     <usWinDescent value="212"/>
     <ulCodePageRange1 value="00000000 00000000 00000000 00000001"/>
     <ulCodePageRange2 value="00000000 00000000 00000000 00000000"/>
+    <sxHeight value="0"/>
+    <sCapHeight value="0"/>
+    <usDefaultChar value="0"/>
+    <usBreakChar value="0"/>
+    <usMaxContext value="2"/>
   </OS_2>
 
   <hmtx>
@@ -1727,8 +1732,9 @@
         <pt x="0" y="763" on="0"/>
         <pt x="0" y="728" on="1"/>
         <pt x="0" y="-128" on="1"/>
-        <pt x="0" y="-161" on="0"/>
-        <pt x="53" y="-211" on="0"/>
+        <pt x="0" y="-150" on="0"/>
+        <pt x="25" y="-188" on="0"/>
+        <pt x="65" y="-211" on="0"/>
         <pt x="87" y="-211" on="1"/>
         <pt x="1274" y="-211" on="1"/>
         <pt x="1307" y="-211" on="0"/>
@@ -1840,9 +1846,7 @@
 
   <name>
     <namerecord nameID="0" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      
-  Created by font-carrier
-  
+      Created by font-carrier
     </namerecord>
     <namerecord nameID="1" platformID="1" platEncID="0" langID="0x0" unicode="True">
       iconfont
@@ -1869,9 +1873,7 @@
       http://fontello.com
     </namerecord>
     <namerecord nameID="0" platformID="3" platEncID="1" langID="0x409">
-      
-  Created by font-carrier
-  
+      Created by font-carrier
     </namerecord>
     <namerecord nameID="1" platformID="3" platEncID="1" langID="0x409">
       iconfont
@@ -1941,8 +1943,6 @@
       <psName name="uni6027"/>
       <psName name="uni672C"/>
       <psName name="uni5584"/>
-      <psName name=""/>
-      <psName name=""/>
     </extraNames>
   </post>
 
@@ -1989,7 +1989,7 @@
         <LookupType value="4"/>
         <LookupFlag value="0"/>
         <!-- SubTableCount=1 -->
-        <LigatureSubst index="0" Format="1">
+        <LigatureSubst index="0">
         </LigatureSubst>
       </Lookup>
     </LookupList>

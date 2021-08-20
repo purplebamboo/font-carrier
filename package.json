@@ -1,6 +1,6 @@
 {
   "name": "font-carrier",
-  "version": "0.3.1",
+  "version": "0.4.0-beta.7",
   "description": "字体搬运工，中文字体解决方案，iconfont",
   "main": "./lib/index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "lodash": "^4.17.21",
     "multiline": "^2.0.0",
     "opentype.js": "^1.1.0",
-    "svg2ttf": "^5.2.0",
+    "svg2ttf-new": "^6.1.0-beta.2",
     "svg_pathify": "^0.0.8",
     "svgpath": "^2.3.1",
     "ttf2eot": "^2.0.0",

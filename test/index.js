@@ -101,3 +101,10 @@ var path2 = font.getSvg('爱',{
   skipViewport:true
 })
 fs.writeFileSync('./test/export2.svg',path2)
+
+//泰文字体母音、韵母偏移测试
+console.log('生成泰文含发音字元字体。。。')
+var thaiFont = fontCarrier.transfer('./test/BaiJamjuree-Regular.ttf')
+thaiFont.output({
+  path: './test/font-out/font4'
+})

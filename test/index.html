@@ -113,7 +113,35 @@
   <iframe src="./export2.svg"></iframe>
 </div>
 
-</body>
+<div>
+  <style type="text/css">
+    @font-face {
+      font-family: 'font4';
+      src:url('./font-out/font4.eot'); /* IE9 */
+      src: url('./font-out/font4.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('./font-out/font4.woff2') format('woff2'),
+      url('./font-out/font4.woff') format('woff'),
+      url('./font-out/font4.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url('./font-out/font4.svg#iconfont'); /* iOS 4.1- */
+    }
+    .font-4{
+      font-family:"font4";font-size:24px;font-style:normal;
+    }
+    @font-face {
+      font-family: 'font4-src';
+      src:url('./BaiJamjuree-Regular.ttf');
+    }
+    .font-4-src{
+      font-family:"font4-src";font-size:24px;font-style:normal;
+    }
 
+  </style>
+  <h1>测试-泰文发音字元偏移</h1>
+  <div ><span>原始: </span><span class="font-4-src">ผมไม่ค่อยรู้จักต้นไม้ในป่า</span></div>
+  <div ><span>输出: </span><span class="font-4">ผมไม่ค่อยรู้จักต้นไม้ในป่า</span></div>
+
+</div>
+
+</body>
 
 </html>

@@ -1,3 +1,8 @@
+# 0.4.0-beta.9 (2026-11-11)
+- 使用 `@yisibl/svgpath` 替代 `svgpath`，修复半径极大的退化圆弧转字体时坐标越界报错
+- 升级 `svg2ttf-new` 到 6.1.0-beta.4（基于上游 svg2ttf 6.1.0）
+- 锁定 `opentype.js` 为 1.3.4，1.3.5 解析部分 TTF 时 `name.postScriptName` 为空导致 `transfer()` 报错
+
 # 0.3.1 (2021-05-11)
 - 添加 .npmignore 文件，防止发布的包体积太大
 - 更新 readme.md 中的徽标
